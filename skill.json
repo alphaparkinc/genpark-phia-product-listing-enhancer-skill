@@ -1,0 +1,32 @@
+{
+  "name": "genpark-phia-product-listing-enhancer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Parse unstructured specifications and enrich e-commerce product listings utilizing phia APIs.",
+  "author": "genpark",
+  "category": "merchandising",
+  "tags": [
+    "phia",
+    "product-enrichment",
+    "specs",
+    "catalog",
+    "merchandising"
+  ],
+  "inputs": {
+    "unstructured_specs": {
+      "type": "string",
+      "description": "Raw spec text or description."
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Product name."
+    }
+  },
+  "outputs": {
+    "enriched_product_details": {
+      "type": "object",
+      "description": "Structured details: {weight_lbs, dimensions_in, packaging}."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
